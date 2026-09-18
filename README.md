@@ -1,24 +1,29 @@
-# CMOS-Analog-IC-Design-Labs
-Hands-on analog IC design labs and final OTA project using Cadence Virtuoso and gm/ID methodology
+# CMOS Analog IC Design Labs & OTA Project
 
-This repository contains my practical implementation, simulations, and technical reports for the **CMOS Analog IC Design** and **Analog IC Design Labs** courses[cite: 3].
+**Author:** Hussein Magdy
+
+This repository contains my practical implementation, simulations, and technical reports for the **CMOS Analog IC Design** track. It highlights foundational analog circuits and features a complete, verified design of a **Two-Stage Miller Operational Transconductance Amplifier (OTA)**.
 
 ## 🛠️ Tools & Technologies
 * **EDA Tool:** Cadence Virtuoso (ADE XL)
-* **Technology Node:** 0.18 $\mu m$ CMOS Process
-* **Methodology:** $g_m/I_D$ Design Methodology & Analog Designer's Toolbox (ADT)
+* **Technology Node:** 0.18 um CMOS Process
+* **Design Methodology:** gm/ID using the Analog Designer's Toolbox (ADT)
 
 ## 📂 Repository Structure
-* **Lab 01 - Lab 06:** Fundamental MOSFET characterization, current mirrors, single-stage amplifiers, and differential pairs.
-* **Lab 07 (Final Project):** Complete design, sizing, and verification of a **5-Transistor Operational Transconductance Amplifier (5T OTA)**.
-  * *Open-Loop Analysis:* DC operating point, differential gain, common-mode gain, CMRR (via XF analysis), and CMIR extraction.
-  * *Closed-Loop Analysis:* Unity-gain buffer configuration, closed-loop DC mismatch, and STB (Stability) analysis for Loop Gain and Phase Margin.
+* **Lab 01 - Lab 06 (Fundamentals):** MOSFET characterization, current mirrors, single-stage amplifiers, and differential pairs.
+* **Lab 09 (Mini Project 1): Two-Stage Miller OTA**
+  * *Open-Loop Analysis:* DC operating point, differential/common-mode gain, CMRR (via XF analysis), and CMIR extraction.
+  * *Closed-Loop Analysis:* Unity-gain buffer configuration, STB analysis (Loop Gain & Phase Margin), and Transient Analysis (Slew Rate & Settling Time).
 
-## 📊 Key Results (Lab 07 OTA Project)
-* **DC Open-Loop Gain ($A_v$):** 34.44 dB
-* **Gain-Bandwidth Product (GBW):** 6.53 MHz
-* **Phase Margin (PM):** 90.36°
-* **CMRR:** 74.6 dB
+## 📊 Key Performance Results (Two-Stage OTA)
+
+| Parameter | Simulated Result | Target Spec |
+| :--- | :--- | :--- |
+| **DC Open-Loop Gain** | 68.99 dB | > 66 dB |
+| **Gain-Bandwidth Product (GBW)** | 7.329 MHz | > 5.0 MHz |
+| **Phase Margin (PM)** | 78.75° | > 70° |
+| **CMRR @ DC** | 77.19 dB | > 74 dB |
+| **Slew Rate** | 4.542 V/us | ~ 5.0 V/us |
 
 ---
-*Developed as part of my self-study journey in Analog Integrated Circuit Design, preparing for advanced mixed-signal design and graduation projects.*
+*Developed as part of my advanced training and preparation for graduation projects in Analog and Mixed-Signal IC Design.*
